@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ body {
+   background-color: #434d57;
+   color: white;
+ }
+
+iframe {
+  frameborder: 0;
+  height: 600px;
+  width: 100%;
+}
