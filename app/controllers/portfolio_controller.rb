@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class PortfolioController < ApplicationController
   def home
   end
 
