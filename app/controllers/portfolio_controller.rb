@@ -11,6 +11,9 @@ class PortfolioController < ApplicationController
   def rewinder
   end
 
+  def whizz
+  end
+
   def download_synth
     send_file(
     "#{Rails.root}/public/SynthesizerStandalone.exe",
