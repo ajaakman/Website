@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
   </head>
 
   <body>
@@ -15,17 +16,22 @@
         <ul class="nav navbar-nav">
           <li><%= link_to "Home", root_path %></li>
           <li>
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Audio</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Audio Programming</a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a href="#"><%= link_to "Modular Audio App", portfolio_modular_path %></a></li>
               <li><a href="#"><%= link_to "Audio Synthesizer", portfolio_synth_path %></a></li>
               <li><a href="#"><%= link_to "Distortion VST Plugin", portfolio_vst_path %></a></li>
+              <li><a href="#"><%= link_to "Max7 Synthesizer", portfolio_max7_path %></a></li>
             </ul>
           </li>
           <li>
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Games</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Games and Audio</a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a href="#"><%= link_to "3D Renderer", portfolio_renderer_path %></a></li>
               <li><a href="#"><%= link_to "UE4 Bullet Whizz", portfolio_whizz_path %></a></li>
               <li><a href="#"><%= link_to "UE4 Rewinder Class", portfolio_rewinder_path %></a></li>
+              <li><a href="#"><%= link_to "Unity Simple Game", portfolio_unity_path %></a></li>
+              <li><a href="#"><%= link_to "UDK Sound Design", portfolio_udk_path %></a></li>
             </ul>
           </li>
         </ul>
